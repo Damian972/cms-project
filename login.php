@@ -23,31 +23,11 @@
                     if(!empty($user_account)){
                         $user_account = $user_account[0];
                         if(Utils::encryptData(htmlspecialchars($password)) === $user_account['password']){
-                            # Define string status
-                            $strStatus = '';
-                            switch(intval($user_account['status'])){
-                                case 1;
-                                    $strStatus = 'Rédacteur';
-                                    break;
-                                case 2;
-                                    $strStatus = 'Modérateur';
-                                    break;
-                                case 3;
-                                    $strStatus = 'Administrateur';
-                                    break;
-                                case 4;
-                                    $strStatus = 'Fondateur';
-                                    break;
-                                default:
-                                    $strStatus = 'Membre';
-                                    break;
-                            }
                             # Set user's session
                             $_SESSION['user'] = array(
-                                'pseudo' => $user_account['pseudo'],
+                                'name' => $user_account['name'],
                                 'email' => $user_account['email'],
-                                'status' => intval($user_account['status']),
-                                'strStatus' => $strStatus
+                                'is_admin' => intval($user_account['is_admin']),
                             );
                         }else{
                             Utils::setFlash('Mot de passe incorrect','danger');
