@@ -1,8 +1,7 @@
 <?php
     $title = 'Login';
     # Header
-    require(TEMPLATES.'_header.main.template.php');
-   # $error = ['type'=>'warning','message' => 'A text message']
+    require(TEMPLATES.'header.template.php');
 ?>
 
     <div class="uk-container"><br>
@@ -34,5 +33,5 @@
 
 <?php
     #Footer
-    require(TEMPLATES.'_footer.main.template.php');
+    require(TEMPLATES.'footer.template.php');
 ?>
