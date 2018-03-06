@@ -30,6 +30,7 @@
                     <ul class="uk-nav uk-nav-default">
                         <li><a href="<?=BASE_URL?>">Accueil</a></li>
                         <li><a href="<?=BASE_URL?>news.php">News</a></li>
+                        <li><a href="<?=BASE_URL?>contact.php">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -43,7 +44,7 @@
                 <ul class="uk-navbar-nav">
                     <li class="uk-navbar-link"><a href="<?=BASE_URL?>">Accueil</a></li>
                     <li class="uk-navbar-link"><a href="<?=BASE_URL?>news.php">News</a></li>
-                    <li class="uk-navbar-link"><a href="<?=BASE_URL?>team.php">Team</a></li>
+                    <li class="uk-navbar-link"><a href="<?=BASE_URL?>contact.php">Contact</a></li>
                 </ul>
             </div>
         </nav>
