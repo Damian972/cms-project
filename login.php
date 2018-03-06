@@ -3,6 +3,7 @@
     define('ROOT',__DIR__.DIRECTORY_SEPARATOR);
     require(ROOT.'config'.DIRECTORY_SEPARATOR.'config.php');
     require(INC.'Database.php');
+    require(INC.'Smarty.class.php');
     require(INC.'Utils.php');
 
     # Start session
@@ -51,7 +52,9 @@
 
 
     # Views
-    require(VIEWS.'login.view.php');
+    $smarty = new Smarty();
+    $smarty->setTemplateDir(TEMPLATES);
+    $smarty->display('login.tpl');
 
     #Clear Session notifications
     if(!empty($_SESSION['notification']['message'])) Utils::clearFlash();
