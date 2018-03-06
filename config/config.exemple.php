@@ -4,7 +4,7 @@
      * Website settings:
      */
     define('WEBSITE_NAME', 'cms-project');
-    define('BASE_URL', 'http://cms-project.test/');
+    define('BASE_URL', '//cms-project.test/');
 
 
     /**
@@ -13,7 +13,6 @@
     define('ASSETS', BASE_URL.'assets/');
     define('INC', ROOT.'includes'.DIRECTORY_SEPARATOR);
     define('TEMPLATES',ROOT.'templates'.DIRECTORY_SEPARATOR);
-    define('VIEWS',ROOT.'views'.DIRECTORY_SEPARATOR);
     define('CACHE',ROOT.'tmp'.DIRECTORY_SEPARATOR);
 
     /**
