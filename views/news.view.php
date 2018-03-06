@@ -1,5 +1,5 @@
 <?php
-    $title = 'News -'.$item['title'];
+    $title = 'News';
     require(TEMPLATES.'header.template.php');
 ?>
 
